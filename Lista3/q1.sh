@@ -1,2 +1,2 @@
 #!/bin/bash
-tr {0-9} 'z' < teste.txt
+tr {0-9} 'Z' < teste.txt
