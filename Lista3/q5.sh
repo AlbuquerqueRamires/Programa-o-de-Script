@@ -1,6 +1,10 @@
 #!/bin/bash
 read -p "Digite a senha para teste: " senha
-echo "$senha" > senha.txt
-if [ 'tr -d {0-9} < senha.txt' != '' ];then
-	echo "Válido"
+tamanho=$(echo ${#senha})
+maiscula=$(echo $senha | tr -d {0-9} | tr -d [a-z])
+numero=$(echo $senha | tr -d [A-Z] | tr -d [a-z])
+if [ "$tamanho" -gt 5 -a "$maiuscula" != ' ' -a "$numero" != ' ' ];then
+	echo "Senha válida!"
+else
+	echo "Senha inválida!"
 fi
