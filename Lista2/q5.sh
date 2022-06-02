@@ -1,0 +1,13 @@
+#!/bin/bash
+echo "AJUDA DE REDIRECIONADORES"
+echo ""
+echo "'>': redireciona a saída padrão para um arquivo, sobreescrevendo-o caso exista algo nele. Pode ser usado para atualizar a lista de arquivos em um diretório."
+echo "'>>': redireciona a saída padrão para um arquivo, adicionando ao final do mesmo. Pode ser usado por exemplo para atualizar um log de mudanças em um arquivo."
+echo "'2>': redireciona a saída padrão de erros para um arquivo, sobreescrevendo-o caso exista algo nele. Pode ser usado para mostrar apenas os erros atuais."
+echo "'2>>': redireciona a saída padrão de erros para um arquivo, adicionando ao final do mesmo. Pode ser usado para mostrar todos os erros encontrados em cada atualização."
+echo "'&>': redireciona todas as saídas para um arquivo, sobreescrevendo-o caso exista algo nele. Pode ser usado para catalogar as saídas da última versão de um script."
+echo "'&>>': redireciona todas as saídas para um arquivo, adicionando ao final do mesmo. Pode ser usado para mostrar todas as saídas encontradas em cada atualização de um script."
+echo "'<': Redireciona um arquivo como parâmetro de um comando. Poderia ser usado, por exemplo, para ler um arquivo e usar a lista de dados dele para vários comandos."
+echo "'<<': Segue um documento, ou seja, lê comandos escritos no arquivo e executa. Pode ser usado para chamar uma serie de comandos caso seja necessario sem ter que ampliar o script original."
+echo "'<<<': Segue uma string, ou seja, lê o conteúdo de uma string e redireciona ela a um comando. Pode ser usado para usar a saída de um comando como parâmetro para outro."
+echo "'|': Usado para conectar a saída de um comando com a entrada de outro. Como o exemplo anterior, pode usar a saída de um comando como parâmetro para outro."
